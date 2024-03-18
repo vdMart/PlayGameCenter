@@ -1,0 +1,62 @@
+
+/* --- Styles Social --- */
+
+#content {
+    margin-top: 58px;
+}
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: var(--color-barra-lateral);
+    color: var(--color-texto);
+    transition: left 0.5s ease;
+    transition: margin-left 0.5s ease;
+}
+
+main.min-main {
+    margin-left: 80px;
+}
+
+
+
+
+.divUser {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    /*border: 1px solid brown;*/
+}
+.divUser:hover {
+    border-radius: 10px;
+    background-color: rgb(237, 137, 137);
+}
+
+.dataUser {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+}
+
+.dataUser p {
+    padding: 0;
+    margin: 0;
+}
+
+.divImg {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.divImg img {
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+

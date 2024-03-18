@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./modal.css" />
+</head>
+<body>
+
+    <!-- Modal -->
+    <div id="modal-component">
+        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Registrarse</h3>
+                        <button type="button" class="btn-close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-5">
+                        <form id="signup-form" action="/new-contact" method="POST">
+                            <label for="nickname">nickname:</label>
+                            <input type="text" id="signup-nickname" name="nickname" class="form-control mb-3" placeholder="Nickname" required>
+
+                            <label for="email">Email:</label>
+                            <input type="text" id="signup-email" name="email" class="form-control mb-3" placeholder="Email" required>
+
+                            <label for="password">Password:</label>
+                            <input type="password" id="signup-password" class="form-control mb-3" placeholder="Password" required>
+
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalSignin" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Iniciar sesion</h3>
+                        <button type="button" class="btn-close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="login-form">
+                        <label for="email">Email</label>
+                        <input type="text" id="login-email" class="form-control mb-3" placeholder="Title" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="login-password" class="form-control mb-3" placeholder="Password" required>
+
+                        <button type="submit" class="btn btn-success w-100 mb-4">Login</button>
+
+                        <button type="button" class="btn btn-info" id="googleLogin">Google</button>
+                        <button type="button" class="btn btn-primary" id="facebookLogin">Facebook</button>
+                        <button type="button" class="btn btn-dark" id="githubLogin">Github</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    
+    <script src="./modal-module.js" type="module"></script>
+</body>
+</html>

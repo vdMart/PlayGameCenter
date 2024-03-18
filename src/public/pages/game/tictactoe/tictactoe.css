@@ -1,0 +1,59 @@
+/* --- Styles TicTacToe --- */
+
+#content {
+  margin-top: 58px;
+}
+
+main {
+  margin-left: 250px;
+  padding: 20px;
+  background-color: var(--color-barra-lateral);
+  color: var(--color-texto);
+  transition: left 0.5s ease;
+  transition: margin-left 0.5s ease;
+}
+
+main.min-main {
+  margin-left: 80px;
+}
+
+
+
+
+
+
+#content {
+  display: flex;
+  flex-direction: column; 
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.containerGame {
+  display: flex;
+  flex-direction: row;
+}
+.containerGame {
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 306px;
+  margin: 50px auto;
+}
+
+.game-cell {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 0 1px #333333;
+  border: 1px solid #333333;
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 60px;
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+  <path 
+    d="M320 96H88a40 40 0 00-40 40v240a40 40 0 0040 40h334.73a40 40 0 0040-40V136a40 40 0 00-40-40z" 
+    fill="none" 
+    stroke="currentColor" 
+    stroke-linecap="round" 
+    stroke-linejoin="round" 
+    stroke-width="32"/>
+  <path 
+    fill="none" stroke="currentColor" 
+    stroke-linecap="round" 
+    stroke-linejoin="round" 
+    stroke-width="32" 
+    d="M112 160l144 112 144-112"/>
+</svg>

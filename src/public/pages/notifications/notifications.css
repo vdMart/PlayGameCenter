@@ -1,0 +1,233 @@
+/* --- Styles Notifications --- */
+
+#content {
+    margin-top: 58px;
+}
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: var(--color-barra-lateral);
+    color: var(--color-texto);
+    transition: left 0.5s ease;
+    transition: margin-left 0.5s ease;
+}
+
+main.min-main {
+    margin-left: 80px;
+}
+
+
+
+
+
+
+
+
+#main-notifications {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+#content {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h1 {
+    color: #333;
+}
+
+#listUsers {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    width: 30%;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+#listFiends,
+#pendingInvite {
+    padding-bottom: 10px;
+    border-radius: 8px;
+    list-style-type: none;
+}
+
+#listFiends li,
+#pendingInvite li {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+#listFiends li:hover,
+#pendingInvite li:hover {
+    background-color: #f0f0f0;
+}
+
+#listFiends img,
+#pendingInvite img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#listFiends p,
+#pendingInvite p {
+    margin: 0;
+}
+
+#listFiends div {
+    display: flex;
+    flex-direction: row;
+}
+
+#listUsers,
+#chat-component {
+    width: 100%;
+    padding-right: 0;
+}
+
+#pendingInvite div {
+    display: flex;
+    flex-direction: column;
+}
+
+#listFiends div li {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+#pendingInvite div li {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    align-items: center;
+}
+
+#pendingInvite div li img {
+    margin-right: 10px;
+}
+
+#listFiends li div p,
+#pendingInvite li div p {
+    font-weight: bold;
+}
+
+#chat-component {
+    width: 65%;
+}
+
+@media only screen and (max-width: 768px) {
+    #content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #listUsers,
+    #chat-component {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdownButton {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#dropdownContent {
+    width: 200px;
+    display: none;
+}
+
+.dropdown-content p {
+    padding: 12px 16px;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content p:hover {
+    background-color: #ddd;
+}
+
+
+
+
+.userPhoto {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+    /* Ajusta el valor según tus preferencias */
+}
+
+/* Estilo para la imagen dentro del contenedor */
+.userPhoto img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para el borde con transición */
+.userPhoto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    /* Grosor inicial del borde */
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: border-color 0.5s ease;
+    /* Duración y tipo de transición */
+}
+
+/* Cambiar el color del borde al pasar el ratón por encima */
+.userPhoto:hover::before {
+    border: 4px solid transparent;
+    border-color: #963939;
+    /* Color del borde al pasar el ratón */
+    border-radius: 50%;
+}
+
+
+
+
+#notifications {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

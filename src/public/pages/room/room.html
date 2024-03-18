@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Game Center</title>
+    <link rel="icon" type="image/png" href="./../../resource/icon.png">
+    <!-- JavaScript con defer a la estructura de Room-->
+    <script defer src="./room-struct.js" type="module"></script>
+    <!-- BOOSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+    <!-- Styles CSS Room Page -->
+    <link rel="stylesheet" href="./../stylesCommon.css"/>
+    <link rel="stylesheet" href="./room.css"/>
+
+</head>
+<body>
+<header id="header-component"></header>  <!-- header component -->
+<div id="modal-component"></div>  <!-- modal component -->
+<nav id="nav-component"></nav>  <!-- nav component -->
+
+
+<!-- Main Room -->
+<main id="main-room">
+    <div class="container" id="content" >
+        <h1>Room</h1>
+
+        <div class = "divRoom">
+            <div class="containerList" id="divGameList">
+                <label for="gameList">Lista de juegos</label>
+                <select name="gameList" id="gameList" size="14">
+                </select>
+            </div>
+
+            <div class="containerList" id="divRoomList">
+                <div class ="labelBtn">
+                    <label for="roomList">Lista de salas</label>
+                    <button id="createRoomBtn">+</button>
+                </div>
+                <select name="roomList" id="roomList" size="14">
+                </select>
+            </div>
+
+            <div class="containerList" id="divPlayerList">
+                <label for="playerList">Lista de jugadores</label>
+                <select name="playerList" id="playerList" size="14">
+                </select>
+            </div>
+        </div>
+
+        <button id="playBtn" disabled>Jugar</button>
+
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content-room">
+            <p>Todavía no hay jugadores suficientes, ¿Quieres esperar o jugar en solitario?</p>
+            <button id="esperarBtn">Esperar</button>
+            <button id="solitarioBtn">Jugar en solitario</button>
+        </div>
+    </div>
+
+    <div id="myModalWait" class="modal">
+        <div class="modal-content-room">
+            <img src="./../../resource/loading.gif" width="40px" alt="Esperando al otro jugador">
+            <p>Esperando al otro jugador</p>
+        </div>
+    </div>
+
+
+</main>
+<!-- Main Room -->
+
+
+<footer id="footer-component"></footer>  <!-- footer component -->
+
+<!-- SCRIPTS Libraries -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

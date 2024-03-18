@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./menu.css" />
+</head>
+<body>
+    
+    <!-- Menu -->
+    <nav id="nav-component">
+        <div class="barra-lateral">
+
+            <div class="usuario" id="usuario">
+              <div class="info-usuario">
+                <div class="nombre-email">
+                  <span class="nombre" id="nickname"></span>
+                  <span class="email" id="email"></span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+              </div>
+            </div>
+        
+            <div class="linea"></div>
+            <nav class="navegacion">
+              <ul>
+                <li>
+                  <a id="home" href="#">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a id="inbox" href="#">
+                    <ion-icon id="mailIcon" name="mail-unread-outline"></ion-icon>
+                    <span>Mensajería</span>
+                  </a>
+                </li>
+                <li>
+                  <a id="favorite" href="#">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <span>Favoritos</span>
+                  </a>
+                </li>
+                <li>
+                  <a id="ranking" href="#">
+                    <ion-icon name="podium-outline"></ion-icon>
+                    <!--<ion-icon name="trophy-outline"></ion-icon>-->
+                    <span>Ranking</span>
+                  </a>
+                </li>
+                <li>
+                  <a id="social" href="#">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <span>Social</span>
+                  </a>
+                </li>
+                <li>
+                  <a id="roomGame" href="#">
+                    <ion-icon name="game-controller-outline"></ion-icon>
+                    <span>Sala juegos</span>
+                  </a>
+                </li>
+                <li>
+                  <a id="gitGame" href="#">
+                    <ion-icon name="git-branch-outline"></ion-icon>
+                    <span>GitGame</span>
+                  </a>
+                </li>
+                <li>
+                  <a id="apoyanos" href="#">
+                    <ion-icon name="cash-outline"></ion-icon>
+                    <span>Apoyanos</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+        
+            <div>
+        
+              <div class="linea"></div>
+        
+              <div class="modo-oscuro">
+                <div class="info">
+                  <ion-icon name="moon-outline"></ion-icon>
+                  <span>Dak Mode</span>
+                </div>
+                <div class="switch">
+                  <div class="base">
+                    <div class="circulo"></div>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+        
+          </div>
+    </nav>
+    <!-- Menu -->
+
+    <script src="./menu-module.js" type="module"></script>
+</body>
+</html>

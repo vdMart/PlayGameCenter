@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Game Center</title>
+    <link rel="icon" type="image/png" href="./../../resource/icon.png">
+    <!-- JavaScript con defer a la estructura de Profile-->
+    <script defer src="./profile-struct.js" type="module"></script>
+    <!-- BOOSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <!-- Styles CSS Profile Page -->
+    <link rel="stylesheet" href="./../stylesCommon.css" />
+    <link rel="stylesheet" href="./profile.css" />
+
+</head>
+<body>
+  <header id="header-component"></header>  <!-- header component -->
+  <div id="modal-component"></div>  <!-- modal component -->
+  <nav id="nav-component"></nav>  <!-- nav component -->
+  
+
+
+  <!-- Main Profile -->
+  <main id="main-profile">
+    <div id="content">
+      <div class="profile-container">
+        <div class="profile-header">
+            <button class="edit-button" id="editButton">Editar</button>
+        </div>
+
+        <div class="profile-details" id="profileDetails">
+            <div class="detail">
+                <div class="profilePhoto" id ="profilePhoto"></div>
+                <h3 class="nombre" id="nicknameProfile"></h3>
+                <h3 id=""></h3>
+                <p id="emailProfile"></p>
+            </div>
+        </div>
+
+        <div class="edit-form" id="editForm">
+            <h2>Editar Perfil</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="photo">URL Photo:</label>
+                <input type="text" id="photo" name="photo">
+                
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+
+                <label for="age">Edad:</label>
+                <input type="text" id="age" name="age">
+
+                <button type="button" id="saveButton">Guardar</button>
+                <button type="button" id="cancelButton">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    </div>
+  </main>
+  <!-- Main Profile -->
+  
+
+
+  <footer id="footer-component"></footer>  <!-- footer component -->
+  
+  <!-- SCRIPTS Libraries -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

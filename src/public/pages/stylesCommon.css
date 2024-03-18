@@ -1,0 +1,73 @@
+/* --- Styles common --- */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+/*@import 'https://fonts.googleapis.com/css?family=Press+Start+2P';*/
+
+:root {
+    --color-content-background: rgba(241, 218, 218, 0.94);
+
+    --color-header-background: rgba(224, 83, 83, 0.96);
+
+    --color-barra-lateral: rgba(241, 218, 218, 0.94);
+
+    --color-texto: rgb(0, 0, 0);
+    --color-texto-menu: rgba(12, 39, 73, 0.94);
+
+    --color-menu-hover: rgba(183, 85, 77, 0.94);
+    --color-menu-hover-texto: rgb(0, 0, 0);
+
+    --color-boton: rgb(0, 0, 0);
+    --color-boton-texto: rgb(255, 255, 255);
+
+    --color-linea: rgba(224, 83, 83, 0.96);
+
+    --color-switch-base: rgba(224, 83, 83, 0.96);
+    --color-switch-circulo: rgb(241, 241, 241);
+
+    --color-scroll: rgba(224, 83, 83, 0.96);
+    --color-scroll-hover: rgba(115, 35, 35, 0.94);
+}
+
+.dark-mode {
+    --color-content-background: rgba(115, 35, 35);
+
+    --color-header-background: rgba(31, 1, 1, 0.94);
+
+    --color-barra-lateral: rgba(115, 35, 35, 0.94);
+
+    --color-texto: rgb(255, 255, 255);
+    --color-texto-menu: rgba(225, 154, 154, 0.96);
+
+    --color-menu-hover: rgba(31, 1, 1, 0.94);
+    --color-menu-hover-texto: rgb(238, 238, 238);
+
+    --color-boton: rgb(255, 255, 255);
+    --color-boton-texto: rgb(0, 0, 0);
+
+    --color-linea: rgb(38, 8, 8);
+
+    --color-switch-base: rgb(0, 0, 0);
+    --color-switch-circulo: rgb(255, 255, 255);
+
+    --color-scroll: rgb(211, 54, 54);
+    --color-scroll-hover: rgb(108, 11, 11);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-content-background);
+    margin: 0;
+    transition: width 0.5s ease, background-color 0.3s ease, left 0.5s ease;
+}
+#content h1 {
+    color: var(--color-texto);
+}
+/* --- Styles common --- */

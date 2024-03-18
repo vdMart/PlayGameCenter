@@ -1,0 +1,96 @@
+
+/* --- Styles Room --- */
+
+#content {
+    margin-top: 58px;
+}
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: var(--color-barra-lateral);
+    color: var(--color-texto);
+    transition: left 0.5s ease;
+    transition: margin-left 0.5s ease;
+}
+
+main.min-main {
+    margin-left: 80px;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divRoom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.containerList {
+    flex: 1;
+    margin: 10px;
+}
+
+.containerList label,
+.containerList select,
+.containerList button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.containerList select {
+    height: 200px;
+}
+
+
+
+
+
+.labelBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+select {
+    min-width: 210px;
+    max-width: 210px;
+}
+
+#createRoomBtn {
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#playBtn {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.modal-content-room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-header-background);
+    color: var(--color-texto);
+    margin-top: 15%;
+    margin-left: 15%;
+    width: 65%;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.modal-content-room button {
+    width: 170px;
+    margin: 2px;
+}
+.modal-content-room p {
+    margin-bottom: 7px;
+}

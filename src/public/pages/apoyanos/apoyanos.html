@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Game Center</title>
+    <link rel="icon" type="image/png" href="./../../resource/icon.png">
+    <!-- JavaScript con defer a la estructura de Apoyanos-->
+    <script defer src="./apoyanos-struct.js" type="module"></script>
+    <!-- BOOSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <!-- Styles CSS Apoyanos Page -->
+    <link rel="stylesheet" href="./../stylesCommon.css" />
+    <link rel="stylesheet" href="./apoyanos.css" />
+
+</head>
+<body>
+  <header id="header-component"></header>  <!-- header component -->
+  <div id="modal-component"></div>  <!-- modal component -->
+  <nav id="nav-component"></nav>  <!-- nav component -->
+  
+
+
+  <!-- Main Apoyanos -->
+  <main id="main-apoyanos">
+    <div id="content">
+        <div class="container">
+            <div class="apoyanos">
+            <h2>¿Quieres apoyar a Play Game Center?</h2>
+            <p>Si quieres apoyar a Play Game Center, puedes hacerlo de las siguientes maneras:</p>
+            <ul>
+                <li>Compartiendo la página con tus amigos y familiares.</li>
+                <li>Dejando una reseña en la página de Play Store.</li>
+                <li>Realizando una donación.</li>
+            </ul>
+            <p>Si quieres realizar una donación, puedes hacerlo a través de PayPal.</p>
+            <p>¡Gracias por tu apoyo!</p>
+            </div>
+            <div class="apoyanos">
+            <h2>Donaciones</h2>
+            <p>Si quieres realizar una donación, puedes hacerlo a través de PayPal.</p>
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="Z6Z3Z3Z3Z3Z3Z" />
+                <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal, la forma más segura y rápida de pagar en línea." alt="Donar con PayPal" />
+                <img alt="" border="0" src="https://www.paypal.com/es_XC/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+            </div>
+        </div>
+  </main>
+  <!-- Main Apoyanos -->
+  
+
+  
+  <!-- SCRIPTS Libraries -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

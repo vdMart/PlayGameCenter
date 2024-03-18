@@ -1,0 +1,19 @@
+
+/* --- Styles Reversi --- */
+
+#content {
+    margin-top: 58px;
+}
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: var(--color-barra-lateral);
+    color: var(--color-texto);
+    transition: left 0.5s ease;
+    transition: margin-left 0.5s ease;
+}
+
+main.min-main {
+    margin-left: 80px;
+}

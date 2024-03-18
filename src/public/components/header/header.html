@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="./header.css" />
+</head>
+<body>
+    
+    <!-- header -->
+    <header id="header-component">
+      <div class="icono-menu">
+        <ion-icon id="cloud" name="menu-outline" style="font-size: 30px;"></ion-icon>
+      </div>
+      <div class="logo" id="logoContainer" style="display: flex; align-items: center;">
+        <h1>Play Game Center</h1>
+      </div>
+      <div class="navbar navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav me-auto">
+              <a class="nav-link logged-out" href="#" data-bs-toggle="modal" data-bs-target="#signinModal">Signin</a>
+              <a class="nav-link logged-out" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</a>
+              <a class="nav-link logged-in" href="#" id="logout">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+    
+    <script src="./header-module.js" type="module"></script>
+</body>
+</html>

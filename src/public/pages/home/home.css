@@ -1,0 +1,45 @@
+
+/* --- Styles Home --- */
+
+#content {
+    margin-top: 58px;
+}
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: var(--color-barra-lateral);
+    color: var(--color-texto);
+    transition: left 0.5s ease;
+    transition: margin-left 0.5s ease;
+}
+
+main.min-main {
+    margin-left: 80px;
+}
+
+.img_juego {
+    width: 250px; /* Ancho fijo de la imagen */
+    height: 200px; /* Altura automática para mantener la proporción */
+    border: 3px solid rgba(31, 1, 1, 0.94);/* Borde de 2px sólido y color negro */
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las celdas */
+}
+.games {
+    text-align: center; /* Alineación del contenido al centro */
+}
+.games img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    max-height: 100%;
+    min-height: 85%;
+}
+.games p {
+    margin-top: 10px; /* Margen superior para separar el texto del borde inferior de la imagen */
+}
