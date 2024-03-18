@@ -9,7 +9,7 @@ function setPartidaRealtime(_gameId, _userId, _position, _timestamp) {
         timestamp: _timestamp
     });
 }
-setPartidaRealtime("iu7hvbkyx5d", "ifsudfhiusdhf", 2, 53454345);
+//setPartidaRealtime("iu7hvbkyx5d", "ifsudfhiusdhf", 2, 53454345);
 
 function readPartidaRealtime(_gameId) {
     const partidaRef = ref(database, 'partida/' + _gameId);
@@ -30,7 +30,7 @@ function readPartidaRealtime(_gameId) {
 
 
 setInterval(() => {
-    var pos = readPartidaRealtime("iu7hvbkyx5d");
+    var pos = readPartidaRealtime(idGame);
     setPlay(pos);
 }, 1000);
 
